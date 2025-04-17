@@ -1,0 +1,62 @@
+    [build-system]
+    requires = ["setuptools>=65.0.0", "wheel"]
+    build-backend = "setuptools.build_meta"
+
+    [project]
+    name = "test_ai"
+    version = "0.1.0"
+    authors = [
+        {name = "Your Name", email = "your.email@example.com"},
+    ]
+    description = "AI testing project using unstructured data and context protocols"
+    readme = "README.md"
+    requires-python = ">=3.10.0"
+    license = {text = "MIT"}
+    classifiers = [
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ]
+    dependencies = [
+        "unstructured",
+        "unstructured_inference",
+        "mcp[cli]",
+        "jupyter",
+        "pandas",
+        "numpy",
+        "python-dotenv",
+        "requests",
+        "pi_heif",
+        "pdf2image",
+        "pypdf",
+        "pymupdf",
+        "dotenv",
+        "openai",
+        "langchain-opentutorial",
+        "langchain",
+        "langchain-openai",
+        "langchain_community",
+        "langchain-core",
+        "sentence_transformers",
+        "langchain-cohere",
+        "langchain-google-vertexai",
+        "langchain-anthropic",
+        "faiss-cpu",
+        "huggingface_hub"
+
+    ]
+
+    [project.optional-dependencies]
+    dev = [
+        "pytest",
+        "pytest-cov",
+        "black",
+        "flake8",
+        "mypy",
+        "isort",
+        "ipykernel",
+    ]
+
+    [project.urls]
+    Homepage = "https://github.com/yourusername/test_ai"
+    Documentation = "https://github.com/yourusername/test_ai/docs"
